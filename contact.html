@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Joseph Torrez</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+	<link href="main.css" rel="stylesheet" />
+	<link href="ck_contact.css" rel="stylesheet" />
+	<script src="ck_contactScript.js" defer></script>
+</head>
+
+<body>
+    <div class="container text-center">
+		<div class="row1">
+			<div class="col">
+				<header>
+					<h1>College Knowledge</h1>
+					<nav class="navbar navbar-dark bg-dark">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="index.html">Home</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="classes.html">My Classes</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="experience.html">Experience</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="contact.html">Contact</a>
+						</li>
+                    </nav>
+				</header>
+			</div>
+		</div>
+        
+        <form id="regForm" action="">
+            <h1>Your Contact Information:</h1>
+
+            <!-- One "tab" for each step in the form: -->
+            <div class="tab">Name:
+              <p><input placeholder="First name..." oninput="this.className = ''"></p>
+              <p><input placeholder="Last name..." oninput="this.className = ''"></p>
+            </div>
+
+            <div class="tab">Contact Info:
+              <p><input placeholder="E-mail..." oninput="this.className = ''"></p>
+              <p><input placeholder="Phone..." oninput="this.className = ''"></p>
+            </div>
+
+            <div class="tab">Time Available:
+              <p><input placeholder="9 a.m." oninput="this.className = ''"></p>
+              <p><input placeholder="5 p.m." oninput="this.className = ''"></p>
+            </div>
+
+            <div style="overflow:auto;">
+              <div style="float:right;">
+                <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
+                <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
+              </div>
+            </div>
+
+            <!-- Circles which indicates the steps of the form: -->
+            <div style="text-align:center;margin-top:40px;">
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+              <span class="step"></span>
+            </div>
+        </form>
+            
+    </div>
+    <footer>
+        <p>Email: <a href="mailto:jtorrez@example.edu">jtorrez@example.edu</a></p>
+        <p>Last updated on April 29th, 2023</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,28 @@
+@charset "utf-8";
+
+/* Div Styles */
+
+div.row2 > h2 {
+    color: aqua;
+    font-size: 42px;
+}
+
+div.row3 > h2 {
+    color: lightskyblue;
+    font-size: 42px;
+}
+
+/* List Styles */
+
+nav.navbar {
+    list-style-type: none;
+    color: white;
+}
+
+ul li:first-of-type {list-style-image: url(math.png);}
+
+ul li:nth-of-type(2) {list-style-image: url(computer.png);}
+
+ul li:nth-of-type(3) {list-style-image: url(piano.png);}
+
+ul li:last-of-type {list-style-image: url(code.png);}
