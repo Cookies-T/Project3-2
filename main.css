@@ -10,7 +10,7 @@ body {
 
 /* List Styles */
 
-nav.navbar {
+ul.navbar {
     list-style-type: none;
     color: white;
 }
